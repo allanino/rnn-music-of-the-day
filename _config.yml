@@ -1,0 +1,69 @@
+# SITE CONFIGURATION
+baseurl: "/rnn-music-of-the-day"
+url: "http://allanino.me"
+
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: "RNN music of the day"
+  avatar: avatar.png
+  gravatar: # Email MD5 hash
+  description: "Daily folk music by a RNN trained using Karpathy's char-rnn" # used by search engines
+
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+
+  # Icons
+  rss: false
+  email_address: # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: "allanino/folk-music-of-the-day"
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: "allanino"
+  wordpress:
+  youtube:
+
+  # Scripts
+  google_analytics: "UA-51903493-1"
+  disqus_shortname: "allanino"
+  katex: false # Enable if using math markup
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: false
+
+permalink: /:title
+
+# PAGINATION
+paginate: 5
+paginate_path: "page:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: :compressed
