@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+disqus: true
 ---
 
 Each day we post a music composed by a trained Recurrent Neural Network (RNN).
@@ -35,7 +36,7 @@ in my work, such as:
 Let me give you some more details.
 
 To train the network I started to look for ASCII notations for music and I found the
-[abc notation](http://abcnotation.com/). It's a format much more suitable for training
+[ABC notation](http://abcnotation.com/). It's a format much more suitable for training
 the network than common MIDI representations, where each track is too far apart for the
 network to correlate them. Another nice thing is that it supports chords and the chords
 are also contiguous to the melody in the same bar. On the other hand, it's used
@@ -48,8 +49,7 @@ I processed the results keeping only the valid files, valid here meaning without
 errors or warnings being thrown by `abc2midi`. In this way I was able to generate
 hundreds of musics which I will release here.
 
-I'll release here (after some polishment) the scripts I used to collect and process the data as well as the
-scripts I used to convert the results into actual sounds and sheet music. Hopefully anyone
-will be able to reproduce my results.
+For the more curious, I've released the [scripts I used](https://github.com/allanino/rnn-composer-helper) with some guidelines on
+how to use them. Feel free to ask questions.
 
 Finally, I hope you enjoy this experiment's results as much as I do!
