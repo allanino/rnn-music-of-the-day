@@ -2,6 +2,8 @@
 baseurl: "/rnn-music-of-the-day"
 url: "http://allanino.me"
 
+future: false
+
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
