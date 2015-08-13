@@ -17,7 +17,7 @@ def add_post(blog_root, date, opus_number, mp3_url):
     post_path = os.path.join(blog_root, '_posts', filename)
     with open(post_path, 'wb') as f:
         s = '---\nlayout: post\ntitle: Opus %d\nimg: %d.svg\nmp3: %s\n---\n'  % (opus_number, opus_number, mp3_url)
-        s += '\n{% include post_content.html %}'
+        s += '\n{% include post_content.html %}\n'
         f.write(s)
 
 if __name__ == '__main__':
