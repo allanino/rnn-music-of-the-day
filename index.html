@@ -28,28 +28,17 @@ layout: default
           </section>
         </div>
     {% endfor %}
-  </div>
 
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="button" href="{{ site.siteurl }}{{ site.baseurl }}/">&laquo; Prev</a>
-      {% else %}
-        <a class="button" href="{{ site.siteurl }}{{ site.baseurl }}/page{{ paginator.previous_page }}/">&laquo; Prev</a>
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.next_page %}
+        <a class='next button' href="{{ site.siteurl }}{{ site.baseurl }}/page{{ paginator.next_page }}/"></a>
       {% endif %}
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-
-    {% if paginator.next_page %}
-      <a class='next button' href="{{ site.siteurl }}{{ site.baseurl }}/page{{ paginator.next_page }}/">Next &raquo;</a>
-    {% else %}
-      <span class='next button'>Next &raquo;</span>
+    </div>
     {% endif %}
   </div>
-  {% endif %}
-</div>
+
+  </div>
 
 <script src="{{ site.siteurl }}{{ site.siteurl }}{{ site.baseurl }}/js/jquery-1.11.1.js"></script>
 <script src="{{ site.siteurl }}{{ site.siteurl }}{{ site.baseurl }}/js/jscroll/jquery.jscroll.min.js"></script>
