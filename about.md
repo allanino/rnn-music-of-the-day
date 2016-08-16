@@ -5,6 +5,9 @@ permalink: /about/
 disqus: true
 ---
 
+**UPDATE:** The latest composition to be posted here is from July 14, 2016, ending about one year of
+daily compositions.
+
 Each day we post a music composed by a trained Recurrent Neural Network (RNN).
 
 This is just for fun. I am not claiming this music to be superior or even equal in
